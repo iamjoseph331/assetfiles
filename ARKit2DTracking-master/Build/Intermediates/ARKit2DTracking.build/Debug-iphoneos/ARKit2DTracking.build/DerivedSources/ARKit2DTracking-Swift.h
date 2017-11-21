@@ -173,6 +173,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import Foundation;
 @import ARKit;
 @import SceneKit;
 #endif
@@ -201,9 +203,21 @@ SWIFT_CLASS("_TtC15ARKit2DTracking11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSURLSession;
+@class NSURLSessionDownloadTask;
+@class NSURLSessionTask;
+
+SWIFT_CLASS("_TtC15ARKit2DTracking10Downloader")
+@interface Downloader : NSObject <NSURLSessionDownloadDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
 @class ARSCNView;
 @class ARSession;
 @class ARFrame;
+@class UITapGestureRecognizer;
 @protocol SCNSceneRenderer;
 @class ARAnchor;
 @class SCNNode;
@@ -217,6 +231,7 @@ SWIFT_CLASS("_TtC15ARKit2DTracking14ViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)session:(ARSession * _Nonnull)session didUpdateFrame:(ARFrame * _Nonnull)frame;
+- (void)handleARTap:(UITapGestureRecognizer * _Nonnull)gestureRecognize;
 - (SCNNode * _Nullable)renderer:(id <SCNSceneRenderer> _Nonnull)renderer nodeForAnchor:(ARAnchor * _Nonnull)anchor SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

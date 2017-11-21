@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "7ce7303561d144d85f7e97f206590e0d"
-build_time: [1510903798, 841138000]
+build_time: [1511272298, 820706000]
 inputs:
-  "/Users/home/Downloads/ARKit2DTracking-master/CocoaHeadDemo/ViewController.swift": [1510903623, 0]
+  "/Users/home/Downloads/ARKit2DTracking-master/CocoaHeadDemo/ViewController.swift": [1511272297, 0]
   "/Users/home/Downloads/ARKit2DTracking-master/CocoaHeadDemo/AppDelegate.swift": [1508279868, 0]

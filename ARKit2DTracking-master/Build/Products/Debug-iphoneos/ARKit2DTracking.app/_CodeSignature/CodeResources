@@ -124,6 +124,10 @@
 		<data>
 		HOEJzNVEEgKoNEfIC1Fue19Kmcs=
 		</data>
+		<key>Models.scnassets/.DS_Store</key>
+		<data>
+		vKSkKakZbqKAE6aDepKNLTtRnHE=
+		</data>
 		<key>Models.scnassets/cup/cup.scn</key>
 		<data>
 		V0UrskmKSKvnRFuPaG7/onEujYo=
@@ -170,7 +174,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		0cqSt92SVTF8VCGGyAuz+p3IUh4=
+		iMskpe0XF+3boRvMzp/QmyE6r24=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -612,11 +616,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0cqSt92SVTF8VCGGyAuz+p3IUh4=
+			iMskpe0XF+3boRvMzp/QmyE6r24=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZCUQReXMnieOS8jxq/fJy++ZP4uY6Iy9L0/meLP6zlo=
+			/E0mH6mLeYEkuHIJbKzOsU2wRmRRSsBt99EKQ6jAjnY=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
